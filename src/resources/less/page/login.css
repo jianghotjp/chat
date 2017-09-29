@@ -1,0 +1,99 @@
+/* 登录 */
+.head_box {
+  height: 3.1rem;
+  background-color: #fd4071;
+}
+.head_box .user_head {
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  width: 1.46rem;
+  height: 1.46rem;
+  margin-top: -0.73rem;
+  margin-left: -0.73rem;
+  border: none;
+  border-radius: 50%;
+}
+.head_box .user_head img {
+  width: 100%;
+}
+.login .mui-input-group {
+  margin-top: .3rem;
+  background-color: #fff;
+}
+.login .mui-input-group:before {
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  height: .01rem;
+  background-color: #ddd;
+  -webkit-transform: scaleY(0.5);
+  transform: scaleY(0.5);
+}
+.login input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px white inset !important;
+}
+.login .mui-input-group .mui-input-row {
+  height: .88rem;
+}
+.login .mui-input-group .mui-input-row:after {
+  left: 0;
+}
+.login .mui-input-group input {
+  display: block;
+  height: .88rem;
+  padding: 0 .2rem;
+  font-size: .26rem;
+  line-height: .88rem;
+}
+.login .mui-input-row .mui-input-clear ~ .mui-icon-clear {
+  top: .18rem;
+}
+.login .mui-btn {
+  display: block;
+  width: 6.96rem;
+  height: .9rem;
+  margin: .3rem auto 0 auto;
+  padding: 0;
+  text-align: center;
+  color: #fff;
+  border: none;
+  background-color: #fd4071;
+}
+.login .mui-btn:active {
+  background-color: #fd4071;
+}
+.login .btn_row {
+  margin-top: .4rem;
+  text-align: center;
+  line-height: .6rem;
+}
+.login .btn_row ._btn {
+  font-size: .24rem;
+  color: #fd4071;
+}
+.login_info {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  background-color: #fff;
+}
+.login_info ._box {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  text-align: center;
+}
+.login_info ._box h3 {
+  font-size: .6rem;
+  color: #333;
+}

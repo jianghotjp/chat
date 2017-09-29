@@ -1,0 +1,11 @@
+.locker .locker_top {
+  height: 2rem;
+  line-height: 2rem;
+  text-align: center;
+}
+.locker #holder {
+  margin: 0 auto;
+}
+.locker #alert {
+  text-align: center;
+}

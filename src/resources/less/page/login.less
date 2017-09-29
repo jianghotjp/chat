@@ -1,0 +1,76 @@
+/* 登录 */
+.head_box{ 
+    height: 3.1rem; 
+    background-color:@color-main;
+    .user_head{ 
+        top: 50%; 
+        left: 50%; 
+        z-index: 1; 
+        width: 1.46rem; 
+        height: 1.46rem; 
+        margin-top: -.73rem; 
+        margin-left: -.73rem; 
+        border: none;
+        border-radius: 50%;
+        overflow: hidden;
+        img{
+            width: 100%;
+        }
+    }
+}
+.login {
+    .mui-input-group{ 
+        margin-top: .3rem; 
+        background-color: #fff;
+        :before{ 
+            content: ""; 
+            top: 0; 
+            left: 0; 
+            right: 0; 
+            z-index: 1; 
+            height: .01rem; 
+            background-color: #ddd; 
+            -webkit-transform: scaleY(.5); 
+            transform: scaleY(.5);
+        }
+        .mui-input-row{ 
+            height: .88rem;
+            :after{ left: 0;}
+        }
+        input{ 
+            display: block; 
+            height: .88rem; 
+            padding: 0 .2rem; 
+            font-size: .26rem; 
+            line-height: .88rem;
+        }
+        .mui-input-clear~.mui-icon-clear{ top: .18rem;}
+    }
+    input:-webkit-autofill { 
+        -webkit-box-shadow: 0 0 0px 1000px white inset !important;
+    }
+    
+    .mui-btn{ 
+        display: block; 
+        width: 6.96rem; 
+        height: .9rem; 
+        margin: .3rem auto 0 auto; 
+        padding: 0; 
+        text-align: center; 
+        color: #fff;
+        border: none; 
+        background-color:@color-main;
+        :active{background-color:@color-main;}
+    }
+    .btn_row{ 
+        margin-top: .4rem; 
+        text-align: center; 
+        line-height: .6rem;
+        ._btn{ 
+            font-size: .24rem; 
+            color:@color-main;
+            
+        }
+    }
+}
+

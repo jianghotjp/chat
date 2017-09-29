@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="utf-8">
+    <title>登录/注册</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="format-detection" content="telephone=no,email=no,adress=no" />
+    <link rel="stylesheet" type="text/css" href="../resources/css/animate.css" />
+    <link rel="stylesheet" type="text/css" href="../resources/css/mui.min.css" />
+    <link rel="stylesheet" type="text/css" href="../resources/css/style.css" />
+    <!--<style>
+        @font-face {
+            font-family: "jdb-icon";
+            src:url('${vars.root}/upload/upload/icon/jdb-icon.ttf') format('truetype');
+        }
+        
+        .jdb-icon {
+            font-family: "jdb-icon" !important;
+            font-size: .32rem;
+            font-style: normal;
+            -webkit-font-smoothing: antialiased;
+            -webkit-text-stroke-width: 0.2px;
+            -moz-osx-font-smoothing: grayscale;
+        }
+    </style>-->
+    <script type="text/javascript">
+        var vars = {
+            root: "/",
+            clientRoot: "${vars.clientRoot}",
+            uploadRoot: "${vars.uploadRoot}",
+            resourceFolder: "${vars.resourceFolder}",
+            theme: {
+                id: "${vars.theme.id}",
+                root: "${vars.theme.root}"
+            }
+        };
+        //禁止选中文字，模拟APP
+        document.oncontextmenu = function() {
+            return false;
+        };
+    </script>
+
+
+</head>
+
+<body class="login">
+    <div class="wrap" v-cloak>
+        <div class="head_box pr">
+            <div class="user_head pa">
+                <img src="../resources/images/unsignd.jpg">
+            </div>
+        </div>
+        <template v-if="isLogin">
+            <div class="mui-input-group pr">
+                <div class="mui-input-row">
+                    <input type="text" id="userName" class="mui-input-clear" placeholder="用户名" autoComplete="off" v-model="userName"/>
+                </div>
+                <div class="mui-input-row">
+                    <input type="password" id="userPassword" class="mui-input-clear" maxlength="20" placeholder="密码" autoComplete="off" v-model="userPwd"/>
+                </div>
+            </div>
+            <button type="button" class="mui-btn btn_login mui-disabled" @click="saveLoginInfo">登录</button>
+        </template>
+        <template v-else>
+            <div class="mui-input-group pr">
+                <div class="mui-input-row">
+                    <input type="text" id="regName2" class="mui-input-clear" placeholder="用户名" autoComplete="off" v-model="regName"/>
+                </div>
+                <div class="mui-input-row">
+                    <input type="password" id="regPassword" class="mui-input-clear" maxlength="20" placeholder="密码" autoComplete="off" v-model="regPwd1"/>
+                </div>
+                <div class="mui-input-row">
+                    <input type="password" id="regPasswordAg" class="mui-input-clear" maxlength="20" placeholder="密码" autoComplete="off" v-model="regPwd2"/>
+                </div>
+            </div>
+            <button type="button" class="mui-btn btn_login mui-disabled" @click="register">注册</button>
+        </template>
+
+        <div class="btn_row" @click="toggleLogin">
+            <span class="_btn" v-if="isLogin">免费注册</span>
+            <span class="_btn" v-else>登录</span>
+        </div>
+
+    </div>
+
+
+
+
+    <script src="../resources/js/init.js"></script>
+    <!--页面js-->
+    <script src="https://cdn.wilddog.com/js/client/current/wilddog.js"></script>
+    <script src="../resources/js/pages/login.js"></script>
+</body>
+
+</html>

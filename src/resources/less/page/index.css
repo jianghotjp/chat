@@ -1,0 +1,13 @@
+.index .header {
+  margin-top: .5rem;
+  border-top: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+}
+.index .header .menu_item {
+  width: 25%;
+  height: 1rem;
+  line-height: 1rem;
+  text-align: center;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
